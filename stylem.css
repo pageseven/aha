@@ -42,9 +42,10 @@ main {
     place-content: space-between;
     place-self: start;
     max-width:100%;
-    flex-direction: row;
+    flex-direction: row; 
     flex-grow: 2;
     flex-wrap: wrap;
+    overflow-x: hidden;
     
 }
 .projects img{
@@ -53,6 +54,7 @@ main {
     box-sizing: border-box;
     margin:10px;
     flex-grow: 2;
+    max-width: 98vw;
    
 
    
