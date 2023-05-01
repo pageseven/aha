@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@900&family=Major+Mono+Display&family=Orbitron:wght@500&family=Poppins&family=Proza+Libre:wght@600&display=swap');
+
+body {
+
+    background-image: url(https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-blend-mode: exclusion;
+    place-content: center;
+    place-items: center;
+    grid: 20vh 1fr 20vh / 100%;
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    font-family: Inter;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+
+main>span {
+    grid-column: 1/2;
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.button {
+    height: 50%;
+    width: 50%;
+    background-color: hsla(0, 100%, 50%);
+    color: white;
+    font-family: Inter;
+    font-size: 30px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid: 5px 100px 1fr 100px / 60px 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:4;
+}
+
+.menu {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index:5;
+}
+.open > .a1{
+    transform:rotateZ(45deg);
+    fill:black;
+}
+.open > .a2{
+    transform:rotateZ(-45deg)  translateX(22px);
+    fill:black;
+}
+.open > .a3{
+   transform:scaleX(0);
+   fill:black;
+}
+
+.a1{
+    transform-origin:center;
+    transition: all 0.4s ease;
+   
+}
+.a2{
+    transform-origin:center;
+    transition: all 0.4s ease;
+   
+}
+.a3{
+    transform-origin:right center;
+    transition: all 0.4s ease;
+}
+.cover{
+    height:100vh;
+    width:0;
+    position:absolute;
+    right:0px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+    place-content: center;
+    place-items: center;
+}
+.openC{
+    width:100vw;
+    background-color: white;
+    
+}
+.menus{
+    
+    font-family: Inter;
+    font-size:40px;
+    color: unset;
+    
+}
+
