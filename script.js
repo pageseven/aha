@@ -31,6 +31,6 @@ document.querySelector(".menu").addEventListener("click",() =>{
     document.querySelector(".openC")
     ?setTimeout(()=>{
         document.querySelector(".openC").innerHTML = [`About`,`Document`,`Contact`,`Projects`].map(el =>`<a class="menus" href="${el.toLowerCase()}.html">${el}</a>`).join('');
-        },1000)
+        },500)
     :document.querySelector(".cover").innerHTML = ``;   
     });

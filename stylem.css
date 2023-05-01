@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@900&family=Major+Mono+Display&family=Orbitron:wght@500&family=Poppins&family=Proza+Libre:wght@600&display=swap');
 
 body {
-
-    background-image: url(https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
     background-color: white;
     height: 100vh;
     width: 100vw;
@@ -16,17 +14,44 @@ body {
     place-content: center;
     place-items: center;
     grid: 20vh 1fr 20vh / 100%;
-    overflow-y: hidden;
+    
+}
+.index{
+    background-image: url(https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+}
+.projects .st0{
+    fill:black;
+    
 }
 
 main {
-    height: 100%;
-    width: 100vw;
+    min-height: 100%;
+    width: 100%;
     font-family: Inter;
     font-size: 40px;
     color: white;
     display: flex;
     box-sizing: border-box;
+    flex-grow: 2;
+    margin:0;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.projects main{
+    place-content: space-between;
+    place-self: start;
+    max-width:100%;
+    flex-direction: row;
+    
+}
+.projects img{
+    height:30vh;
+    width:auto;
+    box-sizing: border-box;
+    margin:10px;
+    flex-grow: 2;
+   
+
    
 }
 
@@ -114,16 +139,19 @@ header {
     width:0;
     position:absolute;
     right:0px;
-    background-color: white;
+  
     display:flex;
     flex-direction: column;
     transition: 0.4s ease;
-    place-content: center;
+    place-content: start;
     place-items: center;
+    box-sizing: border-box;
+    padding-top:150px;
 }
 .openC{
     width:100vw;
     background-color: white;
+   
     
 }
 .menus{
