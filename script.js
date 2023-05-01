@@ -1,4 +1,5 @@
 
+document.body.style.height = `${window.innerHeight}px`;
 const responsify = (a,b) =>  window.navigator.maxTouchPoints ? a : b;
 
 document.querySelector("link").setAttribute("href",responsify("stylem.css","style.css"));
@@ -24,6 +25,7 @@ style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
 document.querySelector("header").innerHTML+= responsify(mobileMenu,`<menu>${menuItems.map(el =>`<a class="menuItem" href="${el.toLowerCase()}.html">${el}</a>`).join('')}</menu>`);
 
 document.querySelector(".menu").addEventListener("click",() =>{
+    
     document.querySelector(".menu").classList.toggle("open");
     document.querySelector(".cover").classList.toggle("openC");
     document.querySelector(".openC")

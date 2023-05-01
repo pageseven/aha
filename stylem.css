@@ -16,6 +16,7 @@ body {
     place-content: center;
     place-items: center;
     grid: 20vh 1fr 20vh / 100%;
+    overflow-y: hidden;
 }
 
 main {
@@ -26,12 +27,12 @@ main {
     color: white;
     display: flex;
     box-sizing: border-box;
-    padding: 15px;
-
+   
 }
 
-main>span {
-    grid-column: 1/2;
+h1{
+    box-sizing: border-box;
+    margin-left:20px;
 }
 
 footer {
@@ -40,6 +41,9 @@ footer {
     display: flex;
     place-content: center;
     place-items: center;
+    box-sizing: border-box;
+  
+
 }
 
 .button {
@@ -52,6 +56,7 @@ footer {
     display: flex;
     place-content: center;
     place-items: center;
+    box-sizing: border-box;  
 }
 
 header {
@@ -61,6 +66,7 @@ header {
     grid: 5px 100px 1fr 100px / 60px 1fr;
     place-content: center;
     place-items: center;
+  
 }
 
 .logo {
@@ -93,16 +99,12 @@ header {
    fill:black;
 }
 
-.a1{
+.a1,.a2{
     transform-origin:center;
     transition: all 0.4s ease;
    
 }
-.a2{
-    transform-origin:center;
-    transition: all 0.4s ease;
-   
-}
+
 .a3{
     transform-origin:right center;
     transition: all 0.4s ease;
