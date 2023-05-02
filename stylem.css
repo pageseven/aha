@@ -19,10 +19,7 @@ body {
 .index{
     background-image: url(https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
 }
-.projects .st0{
-    fill:black;
-    
-}
+
 
 main {
     height:100%;
@@ -37,28 +34,7 @@ main {
    
    
 }
-.projects main{
-    min-height: 100%;
-    place-content: space-between;
-    place-self: start;
-    max-width:100%;
-    flex-direction: row; 
-    flex-grow: 2;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    
-}
-.projects img{
-    height:30vh;
-    width:auto;
-    box-sizing: border-box;
-    margin:10px;
-    flex-grow: 2;
-    max-width: 98vw;
-   
 
-   
-}
 
 h1{
     box-sizing: border-box;
