@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@900&family=Major+Mono+Display&family=Orbitron:wght@500&family=Poppins&family=Proza+Libre:wght@600&display=swap');
+
+body {
+   
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid:10vh fit-content / 100%;
+   
+    
+}
+.index{
+    background-image: url(https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:4;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid: 5px 100px 1fr 100px / 60px 1fr;
+    place-content: center;
+    place-items: center;
+  
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:4;
+}
+
+.menu {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index:5;
+}
+.st0{
+    fill:black;
+}
+.open > .a1{
+    transform:rotateZ(45deg);
+    fill:black;
+}
+.open > .a2{
+    transform:rotateZ(-45deg)  translateX(22px);
+    fill:black;
+}
+.open > .a3{
+   transform:scaleX(0);
+   fill:black;
+}
+
+.a1,.a2{
+    transform-origin:center;
+    transition: all 0.4s ease;
+   
+}
+
+.a3{
+    transform-origin:right center;
+    transition: all 0.4s ease;
+}
+.cover{
+    height:100vh;
+    width:0;
+    position:absolute;
+    right:0px;
+  
+    display:flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+    place-content: start;
+    place-items: center;
+    box-sizing: border-box;
+    padding-top:150px;
+}
+.openC{
+    width:100vw;
+    background-color: white;
+   
+    
+}
+.menus{
+    
+    font-family: Inter;
+    font-size:40px;
+    color: unset;
+    
+}
+
+main{
+    grid-area:2/1/3/2;
+    height:100%;
+    width:100vw;
+    display:grid;
+    grid:auto-flow 5rem / 100%;
+   padding:1rem;
+    box-sizing: border-box;
+    place-content:start;
+    place-items: start;   
+    row-gap:0.5rem;
+}
+.record{
+    border:1px solid grey;   
+    width:100%;
+    height:100%;
+    font-family: Inter;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-left:4rem;
+    display:flex;
+    place-items: center;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.bmain{
+    grid-area:2/1/3/2;
+        height:100%;
+        width:100vw;
+        display:grid;
+        grid:auto-flow 5rem / 100%;
+       padding:1rem;
+        box-sizing: border-box;
+        place-content:start;
+        place-items: start;   
+        row-gap:0.5rem;
+}
+
+.brecord{  
+    width:100%;
+    height:100%;
+    font-family: Inter;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-left:4rem;
+    display:flex;
+    place-items: center;
+    border-radius: 0.5rem;
+}
