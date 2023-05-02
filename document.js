@@ -1,4 +1,5 @@
-let arr = [];
+let arr = [];document.body.style.height = `${window.innerHeight}px`;
+window.addEventListener("resize",()=> document.body.style.height = `${window.innerHeight}px`);
 document.querySelectorAll(".record").forEach(rec => {
      
     rec.addEventListener("touchmove",ev=>{

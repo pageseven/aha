@@ -1,5 +1,6 @@
 
 document.body.style.height = `${window.innerHeight}px`;
+window.addEventListener("resize",()=> document.body.style.height = `${window.innerHeight}px`);
 
 const selector = s => document.querySelector(s);
 const responsify = (a,b) =>  window.navigator.maxTouchPoints ? a : b;
