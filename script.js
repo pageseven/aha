@@ -1,8 +1,11 @@
 
-document.body.style.height = `${window.innerHeight}px`;
+// document.body.style.height = `${window.innerHeight}px`;
+const selector = s => document.querySelector(s);
 const responsify = (a,b) =>  window.navigator.maxTouchPoints ? a : b;
 
-document.querySelector("link").setAttribute("href",responsify("stylem.css","style.css"));
+const toggle = (s,name) => selector(s).classList.toggle(name);
+
+selector("link").setAttribute("href",responsify("stylem.css","style.css"));
 
 const menuItems = [`About`,`Document`,`Contact`,`Projects`];
 const mobileMenu =  `
@@ -22,15 +25,15 @@ style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
 </svg>
 `
 
-document.querySelector("header").innerHTML+= responsify(mobileMenu,`<menu>${menuItems.map(el =>`<a class="menuItem" href="${el.toLowerCase()}.html">${el}</a>`).join('')}</menu>`);
+selector("header").innerHTML+= responsify(mobileMenu,`<menu>${menuItems.map(el =>`<a class="menuItem" href="${el.toLowerCase()}.html">${el}</a>`).join('')}</menu>`);
 
-document.querySelector(".menu").addEventListener("click",() =>{
+selector(".menu").addEventListener("click",() =>{
     
-    document.querySelector(".menu").classList.toggle("open");
-    document.querySelector(".cover").classList.toggle("openC");
-    document.querySelector(".openC")
+    toggle(".menu","open");
+    toggle(".cover","openC");
+    selector(".openC")
     ?setTimeout(()=>{
-        document.querySelector(".openC").innerHTML = [`About`,`Document`,`Contact`,`Projects`].map(el =>`<a class="menus" href="${el.toLowerCase()}.html">${el}</a>`).join('');
+        selector(".cover").innerHTML = [`About`,`Document`,`Contact`,`Projects`].map(el =>`<a class="menus" href="${el.toLowerCase()}.html">${el}</a>`).join('');
         },500)
-    :document.querySelector(".cover").innerHTML = ``;   
+    :selector(".cover").innerHTML = ``;   
     });
