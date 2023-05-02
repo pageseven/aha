@@ -112,8 +112,8 @@ main{
     flex-grow: 2;
     flex-shrink: 2;
     flex-direction: row;
-   padding-left:1rem;
-   padding-right:1rem;
+   padding:1rem;
+
     box-sizing: border-box;
     place-content:start;
     place-items: center;
