@@ -8,6 +8,7 @@ body {
     padding: 0;
     display: grid;
     grid:10vh fit-content / 100%;
+    overflow-x:hidden;
    
     
 }
