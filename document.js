@@ -11,10 +11,10 @@ document.querySelectorAll(".record").forEach(rec => {
         document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.transition = '';
      
         rec.addEventListener("touchend",(ev)=>{
-            
+            document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.backgroundColor = ` background-color: hsla(0,0%,0%,0.3)`;
             arr = [];
             rec.style.transform = 'initial';
-            document.querySelectorAll(".brecord").forEach(x => x.style.background = 'initial');
+          
             rec.style.transition = 'all 0.6s ease';
             document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.transition = 'all 1s ease';
         })
@@ -24,7 +24,7 @@ document.querySelectorAll(".record").forEach(rec => {
         const relativeDist =  ist(dist);
         rec.style.transform = `translateX(${dist}px)`; 
    
-        document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.background = `hsla(${color},100%,50%,${relativeDist})`;
+        document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.background = relativeDist < 0.5 ? `hsla(0,0%,0%,0.3)` : `hsla(${color},100%,50%,${relativeDist})`;
        
     })
 })

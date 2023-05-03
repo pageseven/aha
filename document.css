@@ -9,6 +9,22 @@ body {
     display: grid;
     grid:10vh fit-content / 100%;
     overflow-x:hidden;
+    background:
+    repeating-linear-gradient(
+        transparent 0,
+        transparent 99px,
+        hsla(220,100%,50%) 0,
+        hsla(220,100%,50%) 100px
+      
+    ),
+    repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 99px,
+        hsla(220,100%,50%) 0,
+        hsla(220,100%,50%) 100px
+     
+    );
    
     
 }
@@ -114,7 +130,8 @@ main{
    padding:1rem;
     box-sizing: border-box;
     place-content:start;
-    place-items: start;   
+    place-items: start; 
+    row-gap: 3px;  
 
 }
 .record{
@@ -140,6 +157,7 @@ main{
         box-sizing: border-box;
         place-content:start;
         place-items: start;   
+        row-gap: 3px; 
      
 }
 
@@ -153,4 +171,5 @@ main{
     display:flex;
     place-items: center;
     border-radius: 0.5rem;
+    background-color: hsla(0,0%,0%,0.3);
 }
