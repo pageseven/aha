@@ -35,7 +35,7 @@ selector(".menu").addEventListener("click",() =>{
     toggle(".cover","openC");
     selector(".openC")
     ?setTimeout(()=>{
-        selector(".cover").innerHTML = [`About`,`Document`,`Contact`,`Projects`].map(el =>`<a class="menus" href="${el.toLowerCase()}.html">${el}</a>`).join('');
+        selector(".cover").innerHTML = [`About`,`Document`,`Table`,`Projects`].map(el =>`<a class="menus" href="${el.toLowerCase()}.html">${el}</a>`).join('');
         },500)
     :selector(".cover").innerHTML = ``;   
     });
