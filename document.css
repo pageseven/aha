@@ -140,7 +140,7 @@ main{
         box-sizing: border-box;
         place-content:start;
         place-items: start;   
-        row-gap:0.5rem;
+     
 }
 
 .brecord{  
