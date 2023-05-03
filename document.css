@@ -115,10 +115,10 @@ main{
     box-sizing: border-box;
     place-content:start;
     place-items: start;   
-    row-gap:0.5rem;
+
 }
 .record{
-    border:1px solid hsla(0,0%,0%,0.1);   
+    border-bottom:1px solid hsla(0,0%,0%,0.1);   
     width:100%;
     height:100%;
     font-family: Inter;
