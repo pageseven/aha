@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@900&family=Major+Mono+Display&family=Orbitron:wght@500&family=Poppins&family=Proza+Libre:wght@600&display=swap');
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    background-blend-mode: exclusion;
+    place-content: center;
+    place-items: center;
+   
+    
+}
+
+
+
+main {
+    height:100%;
+    width: 100%;
+    font-family: Inter;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    box-sizing: border-box; 
+    margin:0;
+    place-content: center;
+    place-items: center;
+}
+form{
+    height:auto;
+    width:fit-content;
+
+    display:grid;
+    grid:auto-flow max-content / 100%;
+    place-content: center;
+    place-items: center;
+    padding:10px;
+    row-gap:15px;
+}
+.field{
+    display:grid;
+    
+}
+label{
+    color:black;
+    font-size:13px;
+}
+input[type="text"]{
+        width:clamp(400px,30vw,1500px);
+        padding:7px;
+        box-sizing: border-box;
+        border:1px solid black;
+
+        border-radius: 100rem;
+}
+input[type="submit"]{
+    width:clamp(400px,30vw,1500px);
+    padding:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    box-sizing: border-box;
+
+
+    border-radius: 100rem;
+}
+input::placeholder{
+    color:grey;
+    font-size: 12px;
+}
+.checker{
+    display:grid;
+    grid:100%/auto-flow max-content;
+    place-self: start;
+
+}
+.checker label{
+font-size: 11px;
+}
+#button{
+    width:clamp(400px,30vw,1500px);
+    background-color: black;
+    color:white;
+    border-radius: 100rem;
+    border:unset;   
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:4;
+}
+.btn{
+   
+    margin-top:-16px;
+    font-family: Inter;
+    font-size: 16px;
+    
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+.button {
+    height: 50%;
+    width: 50%;
+    background-color: hsla(0, 100%, 50%);
+    color: white;
+    font-family: Inter;
+    font-size: 40px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    box-sizing: border-box;  
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid: 5px 100px 1fr 100px / 60px 1fr;
+    place-content: center;
+    place-items: center;
+  
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:4;
+}
+
+.menu {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index:5;
+}
