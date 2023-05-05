@@ -11,8 +11,9 @@ document.querySelectorAll(".record").forEach(rec => {
         document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.transition = '';
      
         rec.addEventListener("touchend",(ev)=>{
-            document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.backgroundColor = ` background-color: hsla(0,0%,0%,0.3)`;
             arr = [];
+            document.querySelector(".bmain").children[Object.values(document.querySelectorAll(".record")).indexOf(rec)].style.backgroundColor = ` background-color: hsla(0,0%,0%,0.3)`;
+         
             rec.style.transform = 'initial';
           
             rec.style.transition = 'all 0.6s ease';
